@@ -4,7 +4,9 @@ public enum Endpoints {
     public final String Endpoint;
 
     Endpoints(String s) {
-        this.Endpoint = new StupidProperties("src/test/resources/app655.properties","circuit").getValue() + s;
+        this.Endpoint =
+                new StupidProperties("src/test/resources/app655.properties", "circuit")
+                        .getValue() + s+"/";
     }
 
     public String getEndpoint() {
