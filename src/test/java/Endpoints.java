@@ -1,5 +1,7 @@
 public enum Endpoints {
-    GET_ALL("/api/employees");
+    GET_ALL("/api/employees"),
+    POST_NEW_EMPLOEER("/api/employees");
+
 
     public final String Endpoint;
 
