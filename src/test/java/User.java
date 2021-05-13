@@ -12,14 +12,23 @@ public class User {
     private String salary;
     private String surName;
 
+    User(String department, String name, String salary, String surName) {
+        this.department = department;
+        this.name = name;
+        this.salary = salary;
+        this.surName = surName;
+    }
+
     @Override
     public String toString() {
-        return "User{" +
+        return "[" +
+                "{" +
                 "department='" + department + '\'' +
                 ", id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", salary='" + salary + '\'' +
                 ", surName='" + surName + '\'' +
-                '}';
+                '}' + '\'' +
+                "]";
     }
 }
