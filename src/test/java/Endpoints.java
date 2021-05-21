@@ -11,7 +11,4 @@ public enum Endpoints {
                         .getValue() + s+"/";
     }
 
-    public String getEndpoint() {
-        return Endpoint;
-    }
 }

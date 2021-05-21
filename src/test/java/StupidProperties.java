@@ -4,12 +4,12 @@ import java.util.Properties;
 
 public class StupidProperties {
     private final String value;
-    public StupidProperties(String configName, String propsKey) {
+    public StupidProperties(String configFile, String propsKey) {
         Properties properties = new Properties();
-        try (FileInputStream fis = new FileInputStream(configName)) {
+        try (FileInputStream fis = new FileInputStream(configFile)) {
             properties.load(fis);
         } catch (IOException e) {
-            System.out.println("Нет файла : "+ configName);
+            System.out.println("Нет файла : "+ configFile);
             e.printStackTrace();
         }
         value = properties.getProperty(propsKey);
